@@ -40,6 +40,15 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'api' => [
+            'driver'   => 'session',
+            'provider' => 'users',
+        ],
+
+        'sanctum' => [
+            'driver'   => 'sanctum',
+            'provider' => 'users',  // <==  null for laravel-permission get the relations
+        ],
     ],
 
     /*
